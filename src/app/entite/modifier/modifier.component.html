@@ -1,0 +1,40 @@
+<div class="container">
+  <form>
+    <h1 class="h"> Liste Entité</h1>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputNom" >Nom</label>
+        <input type="text" class="form-control" id="inputNom" placeholder="Nom">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputCode">Code</label>
+        <input type="text" class="form-control" id="inputCode" placeholder="Code">
+      </div>
+
+    <div class="form-group col-md-12">
+      <label for="inputdesc">description</label>
+      <input type="text" class="form-control" id="inputdesc" >
+    </div>
+
+      <div class="form-group col-md-12">
+        <label for="inputresponsableN1">Responsable hiérarchique n 1</label>
+        <select id="inputresponsableN1" class="form-control">
+          <option selected>selectionner...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="form-group col-md-12">
+        <label for="inputresponsableN2">Responsable hiérarchique n 2</label>
+        <select id="inputresponsableN2" class="form-control">
+          <option selected>selectionner...</option>
+          <option>...</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="text-center">
+    <button type="submit" [routerLink]="['/RechercherEntite']" class="btn btn-primary">Valider</button>
+      <button type="submit" [routerLink]="['/RechercherEntite']" class="btn btn-primary">Retour</button>
+    </div>
+  </form>
+  </div>

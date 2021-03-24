@@ -1,0 +1,26 @@
+<div >
+  <!-- Sidebar -->
+     <a >
+        <img src="..\assets\intelcomlogo.jpg" />
+      </a>
+</div>
+  <nav id="sidebar">
+
+      <ul class="list-unstyled components">
+
+          <li class="active">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">paramètres</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                  <li>
+                      <a (click)="lister()">Entités</a>
+                  </li>
+                  <li>
+                      <a href="#">collaborateur</a>
+                  </li>
+               </ul>
+          </li>
+      </ul>
+  </nav>
+
+
+<router-outlet></router-outlet>
